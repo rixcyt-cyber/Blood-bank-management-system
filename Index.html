@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Blood Bank Management System</h1>
+    </header>
+
+    <div class="container">
+        <h2>Donate Blood</h2>
+        <form id="donationForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="bloodType">Blood Type:</label>
+            <select id="bloodType" required>
+                <option value="A+">A+</option>
+                <option value="B+">B+</option>
+                <option value="O+">O+</option>
+                <option value="AB+">AB+</option>
+                <option value="A-">A-</option>
+                <option value="B-">B-</option>
+                <option value="O-">O-</option>
+                <option value="AB-">AB-</option>
+            </select>
+
+            <label for="donationDate">Donation Date:</label>
+            <input type="date" id="donationDate" required>
+
+            <button type="submit">Donate</button>
+        </form>
+
+        <h2>Available Blood</h2>
+        <table id="bloodList">
+            <thead>
+                <tr>
+                    <th>Donor Name</th>
+                    <th>Blood Type</th>
+                    <th>Donation Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Blood donations will be displayed here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
